@@ -4,7 +4,6 @@ Aprendizado das características mais básicas do angular.
 
 ## 1. Configuração
 
----
 Para iniciar o desenvolvimento de SPA's com o angular, é necessário pelo menos três ferramentas:
 
 - <a href="https://nodejs.org/en/">NodeJS</a>
@@ -25,8 +24,6 @@ Voltado ao angular, é extremamente importante pois facilita o desenvolvimento d
 
 ## 2. Criação do primeiro projeto
 
----
-
 Para criar um projeto angular e começar a desenvolver aplicações, podemos utilizar o seguinte 
 comando através do angular CLI:
 
@@ -35,4 +32,41 @@ comando através do angular CLI:
 Podemos aplicar algumas configurações básicas como adicionar rotas e definir se usaremos ou não
 algum dos mais famosos pre-processadores CSS.
 
-`ng new <nome-da-aplicação> --routing --style="SCSS"`
+_Estilos póssíveis: css|scss|sass|less|styl_
+
+`ng new <nome-da-aplicacao> --routing --style="SCSS"`
+
+Para iniciar o projeto em um servidor local, utilizamos o comando:
+
+`ng serve`
+
+## 3. Criação de Módulos
+
+Um módulo pode ser entendido como um bloco de código que define um domínio dentro da aplicação,
+a exemplo: Em uma aplicação voltada a saúde, podemos ter, pacientes, médicos, convênios. E para cada
+um deles podemos criar módulos para melhorar a organização do nosso código. 
+Os módulos também são conjuntos de componentes e diretívas.
+
+`ng generate module <nome-do-modulo>`
+
+Caso o módulo necessite da estrutura de rotas, devemos usar o seguinte comando:
+
+`ng generate module <nome-do-modulo> --routing`
+
+## 4. Criação de Componentes
+
+Um componente é uma classe em uma aplicação angular, que pode definir uma página da sua aplicação, 
+ou algum item menor como um componente de input personalizado, uma lista, botão, etc.
+
+`ng generate component <nome-do-componente>`
+
+Caso já exista uma página de mesmo nome do componente, podemos criar o componente dentro dessa pasta
+usando a flag --flat.
+
+_a flag --flat pode ser utilizada também na criação de outras estruturas, 
+caso já exista uma pasta._
+
+`ng generate component <nome-do-componente> --flat`
+
+
+
