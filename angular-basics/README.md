@@ -1,27 +1,38 @@
-# AngularBasics
+# Angular basics
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.2.
+Aprendizado das características mais básicas do angular.
 
-## Development server
+## 1. Configuração
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+---
+Para iniciar o desenvolvimento de SPA's com o angular, é necessário pelo menos três ferramentas:
 
-## Code scaffolding
+- <a href="https://nodejs.org/en/">NodeJS</a>
+- <a href="https://angular.io/cli">Angular CLI</a>
+- NPM | <a href="https://classic.yarnpkg.com/lang/en/docs/install/#windows-stable">YARN</a>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Node
+O node é o responsável pela interpretação de código javascript que iremos desenvolver.
 
-## Build
+### Npm | Yarn
+Ambos são gerenciadores de pacote e são responsáveis por baixar dependências na sua aplicação, 
+o **NPM** é provido oficialmente através do **NODE** ao realizar o download do mesmo. 
+O **YARN** pode ser baixado através do NPM.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Angular CLI
+Ferramenta de linha de comando que permite a criação de novos SPA's, componentes, módulos, etc. 
+Voltado ao angular, é extremamente importante pois facilita o desenvolvimento de aplicações angular.
 
-## Running unit tests
+## 2. Criação do primeiro projeto
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+---
 
-## Running end-to-end tests
+Para criar um projeto angular e começar a desenvolver aplicações, podemos utilizar o seguinte 
+comando através do angular CLI:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+`ng new <nome-da-aplicação>`
 
-## Further help
+Podemos aplicar algumas configurações básicas como adicionar rotas e definir se usaremos ou não
+algum dos mais famosos pre-processadores CSS.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+`ng new <nome-da-aplicação> --routing --style="SCSS"`
