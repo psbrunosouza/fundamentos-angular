@@ -151,5 +151,28 @@ Podemos atribuir uma variável a um elemento HTML utilizando a sintaxe:
 <p>{{ appVariable.getUserName() }}</p>
 ```
 
+Dessa maneira é possível acessar tanto variáveis quanto funções de dentro de um componente filho.
 
+## 4. Comunicação interna no componente usando Data binding
 
+### One way binding
+
+O **one way binding** é uma espécie de comunicação no escopo de um componente, onde podemos
+conectar uma variável ou função no arquivo TS com uma propriedade num elemento html:
+
+`<element [attribule]="value"></element>`
+
+### Event binding
+
+O Event binding é um APAGAR comunicação que requer interação do usuário onde o template html
+pode disparar um evento e o mesmo será capturado no nosso arquivo TS.
+
+`<element (event)="statement"></element>`
+
+### Two way data binding
+
+Com teremos uma comunicação dupla onde o valor de uma variável do typescript estará
+associado ao elemento HTML e vice-versa. Ou seja, independente de onde ocorrer a mudança ambos
+os lados estarão atualizados simultaneamente.
+
+`<element [(attribute)]="value"></element>`
