@@ -1,4 +1,4 @@
-# Transformação de dados com pipe operator
+# Transformação de dados com pipe
 
 ## 1. Pipe
 
@@ -116,8 +116,57 @@ _Uma observação importante: os números são arredondados de acordo com seu va
 <!--output '0 134,950 %'-->
 <p>B: {{1.3495 | percent:'4.3-5':'pt'}}</p>
 ```
+## 2. Encadear pipes
 
-## 2. Localização (i18n)
+Ainda é possível encadear o resultado dos pipes:
+
+```html
+<h3>Encadear pipes</h3>
+
+<p>{{ date | date: 'M/d/yy, h:mm a' | lowercase }}</p>
+```
+
+## 4. Pipes customizados
+
+O angular permite a criação de novos pipes customizados para atender outros propósitos no 
+desenvolvimento da sua aplicação.
+
+Um novo pipe pode ser criado através do angular CLI:
+
+`ng generate pipe <pipe-name>`
+
+O pipe será declarado no módulo onde foi criado e um arquivo de classe será criado para atender
+a criação da estrutura.
+
+```typescript
+import { Pipe, PipeTransform } from '@angular/core';
+
+@Pipe({
+  name: 'square'
+})
+export class SquarePipe implements PipeTransform {
+
+  transform(value: number): number {
+    return value * 2;
+  }
+}
+
+```
+
+Essa classe possui o decorator @Pipe responsável por gerir, por exemplo, o nome utilizado
+para acessar o pipe. E dentro do pipe teremos o metodo "transform" que realizará a ação
+que será criada pelo programador, no exemplo acima o nosso pipe recebe um valor e realiza um
+cálculo de quadrado.
+
+O nosso pipe pode ser igualmente usado como os anteriores da seguinte maneira:
+
+```html
+<h3>Pipes customizados</h3>
+
+<p>{{ 3 | square }}</p>
+```
+
+## 3. Localização (i18n)
 
 Na maior parte das vezes, desejamos aplicar as regras de escrita local aos valores transformados
 pelo operador pipe, como datas, valores decimais e monetários. Dessa forma realizamos uma

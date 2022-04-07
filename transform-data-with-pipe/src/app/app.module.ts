@@ -1,4 +1,4 @@
-import {LOCALE_ID, NgModule} from '@angular/core';
+import { NgModule} from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -8,7 +8,7 @@ import {DashboardModule} from "./dashboard/dashboard.module";
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
@@ -16,8 +16,8 @@ import {DashboardModule} from "./dashboard/dashboard.module";
     FormsModule,
     DashboardModule
   ],
-  providers: [
-
+  providers: [],
+  exports: [
   ],
   bootstrap: [AppComponent]
 })
