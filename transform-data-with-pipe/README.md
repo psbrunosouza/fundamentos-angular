@@ -126,7 +126,7 @@ Ainda é possível encadear o resultado dos pipes:
 <p>{{ date | date: 'M/d/yy, h:mm a' | lowercase }}</p>
 ```
 
-## 4. Pipes customizados
+## 3. Pipes customizados
 
 O angular permite a criação de novos pipes customizados para atender outros propósitos no 
 desenvolvimento da sua aplicação.
@@ -153,7 +153,7 @@ export class SquarePipe implements PipeTransform {
 
 ```
 
-Essa classe possui o decorator @Pipe responsável por gerir, por exemplo, o nome utilizado
+Essa classe possui o decorator **@Pipe** responsável por gerir, por exemplo, o nome utilizado
 para acessar o pipe. E dentro do pipe teremos o metodo "transform" que realizará a ação
 que será criada pelo programador, no exemplo acima o nosso pipe recebe um valor e realiza um
 cálculo de quadrado.
@@ -166,7 +166,7 @@ O nosso pipe pode ser igualmente usado como os anteriores da seguinte maneira:
 <p>{{ 3 | square }}</p>
 ```
 
-## 3. Localização (i18n)
+## 4. Localização (i18n)
 
 Na maior parte das vezes, desejamos aplicar as regras de escrita local aos valores transformados
 pelo operador pipe, como datas, valores decimais e monetários. Dessa forma realizamos uma
