@@ -1,0 +1,46 @@
+Oi! Estamos no dashboard
+<br/>
+
+<div>
+  <h3>Quantos títulos o Brasil ganhou em copas do mundo?</h3>
+  <span *ngIf="award >= 5; else brasilHasLessThanFive">
+  Esse texto será exibido apenas se o Brasil possuir
+  5 títulos no futebol mundial
+</span>
+  <ng-template #brasilHasLessThanFive>
+  <span>
+    Esse texto será exibido caso o Brasil possua menos que 5 títulos no futebol mundial
+  </span>
+  </ng-template>
+</div>
+<br/>
+
+<div [ngSwitch]="color">
+  <h3>Qual a cor da camisa da seleção brasileira?</h3>
+  <span *ngSwitchCase="'yellow'">Amarela</span>
+  <span *ngSwitchCase="'red'">Vermelha</span>
+</div>
+
+<br/>
+
+<div>
+  <h3>Em quais anos o Brasil ganhou a copa do mundo?</h3>
+  <div *ngFor="let year of years">
+    <span>{{year}}</span>
+  </div>
+</div>
+
+<div>
+  <h3>Em quais anos o Brasil ganhou a copa do mundo? (com index)</h3>
+  <div *ngFor="let year of years; let i = index">
+    <span>index: {{i}} -- </span>
+    <span>ano: {{year}}</span>
+  </div>
+</div>
+
+<br/>
+
+<div>
+  <h3>Horário atual: </h3>
+  <span>{{hour}}</span>
+</div>

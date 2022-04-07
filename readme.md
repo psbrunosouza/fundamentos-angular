@@ -7,8 +7,8 @@ novos programadores possam ter fácil adaptação e comprensão dos conceitos do
 
 | Módulo                                                                                                      | Propósito                                                              |
 |-------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------|
-| <a href="https://github.com/psbrunosouza/Fundamentos-Angular/tree/main/angular-basics">Primeiro Projeto</a> | Aprendendo os conceitos básicos, como módulos, componentes e diretivas |
-| <a href="https://github.com/psbrunosouza/Fundamentos-Angular/tree/main/angular-basics">Estrutura Básica</a> | Importação de módulos e componentes, estruturas e diretivas básicas    |
+| <a href="https://github.com/psbrunosouza/fundamentos-angular/tree/main/angular-get-started">Primeiro Projeto</a> | Aprendendo os conceitos básicos, como módulos, componentes e diretivas |
+| <a href="https://github.com/psbrunosouza/fundamentos-angular/tree/main/angular-basics">Estrutura Básica</a> | Importação de módulos e componentes, estruturas e diretivas básicas    |
 
 ## Versão
 

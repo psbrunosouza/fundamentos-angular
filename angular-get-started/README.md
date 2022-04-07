@@ -1,4 +1,4 @@
-# Angular basics
+# Angular primeiro projeto
 
 Aprendizado das características mais básicas do angular.
 
