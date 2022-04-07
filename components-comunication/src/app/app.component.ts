@@ -9,6 +9,8 @@ export class AppComponent {
   title = 'components-comunication';
 
   responseOfDataFromChild(data: boolean): void {
-    console.log(data)
+    console.log(data);
   }
+
+
 }

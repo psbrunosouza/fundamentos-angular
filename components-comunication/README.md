@@ -137,6 +137,19 @@ export class AppComponent {
 }
 ```
 
+## 3. Usar funções e variáveis do componente filho através de uma variável no html
+
+Podemos atribuir uma variável a um elemento HTML utilizando a sintaxe:
+
+`<div #element>Elemento</div>`
+
+```html
+<!-- Enviando dados ao componente filho @Input -->
+
+<app-main #appVariable (isMarriedEvent)="responseOfDataFromChild($event)" userName="José" [married]="true"></app-main>
+
+<p>{{ appVariable.getUserName() }}</p>
+```
 
 
 

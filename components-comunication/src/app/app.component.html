@@ -1,3 +1,6 @@
 <!-- Enviando dados ao componente filho @Input -->
 
-<app-main (isMarriedEvent)="responseOfDataFromChild($event)" userName="José" [married]="true"></app-main>
+<app-main #appVariable (isMarriedEvent)="responseOfDataFromChild($event)" userName="José" [married]="true"></app-main>
+
+<h3>Utilizando variaveis ou funções de um componente através de variável no html #variable</h3>
+<p>{{ appVariable.getUserName() }}</p>

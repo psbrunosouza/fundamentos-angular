@@ -23,4 +23,9 @@ export class MainComponent implements OnInit {
   sendData(): void {
     this.isMarriedEvent.emit(this.married)
   }
+
+  getUserName(): string {
+    return this.userName;
+  }
+
 }
