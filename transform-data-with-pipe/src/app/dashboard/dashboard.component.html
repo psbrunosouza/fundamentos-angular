@@ -1,0 +1,76 @@
+<h2>Uso do pipe operator</h2>
+<h3>Dates</h3>
+
+<!--
+  'M/d/yy, h:mm a',
+  'MMM d, y, h:mm:ss a',
+  'MMMM d, y, h:mm:ss a z',
+  'EEEE, MMMM d, y, h:mm:ss a zzzz',
+  'M/d/yy',
+  'MMM d, y',
+  'MMMM d, y',
+  'EEEE, MMMM d, y',
+  'h:mm a',
+  'h:mm:ss a',
+  'h:mm:ss a z',
+  'h:mm:ss a zzzz'
+ -->
+
+<p>{{ date | date: 'M/d/yy, h:mm a' }}</p>
+
+<h3>Currency</h3>
+
+<!--output '$0.26'-->
+<p>A: {{1.90 | currency}}</p>
+
+<!--output 'CA$0.26'-->
+<p>A: {{1.90 | currency:'BRL'}}</p>
+
+<!--output 'CAD0.26'-->
+<p>A: {{1.90 | currency:'BRL':'code'}}</p>
+
+<!--output 'CA$0,001.35'-->
+<p>B: {{2.19 | currency:'BRL':'symbol':'4.2-2'}}</p>
+
+<!--output '$0,001.35'-->
+<p>B: {{2.19 | currency:'BRL':'symbol-narrow':'4.2-2'}}</p>
+
+<!--output '0 001,35 CA$'-->
+<p>B: {{1.3495 | currency:'BRL':'symbol':'4.2-2':'pt-BR'}}</p>
+
+<!--output 'CLP1' because CLP has no cents-->
+<p>B: {{2.19 | currency:'BRL'}}</p>
+
+<h3>Decimal</h3>
+
+<!--will output '4'-->
+<p>{{3.6 | number: '1.0-0'}}</p>
+
+<!--will output '-4'-->
+<p>{{-3.6 | number:'1.0-0'}}</p>
+
+<!-- will output 03,0 -->
+<p>{{3 | number: '2.1-1'}}</p>
+
+
+<!-- will output 3.46 -->
+<p>{{3.4552322 | number: '1.1-2'}}</p>
+
+<h3>Uppercase</h3>
+
+<p>{{ 'texto transformado em caixa alta' | uppercase }}</p>
+
+<h3>Lowercase</h3>
+
+<p>{{ 'TEXTO TRANSFORMADO EM CAIXA BAIXA' | lowercase }}</p>
+
+<h3>Percent</h3>
+
+<!--output '80%'-->
+<p>A: {{0.80 | percent}}</p>
+
+<!--output '0,134.950%'-->
+<p>B: {{1.3495 | percent:'4.3-5'}}</p>
+
+<!--output '0 134,950 %'-->
+<p>B: {{1.3495 | percent:'4.3-5':'pt'}}</p>

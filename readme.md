@@ -5,12 +5,21 @@ novos programadores possam ter fácil adaptação e comprensão dos conceitos do
 
 ## 📖 Módulos
 
-| Módulo                                                                                                                            | Propósito                                                              |
-|-----------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------|
-| <a href="https://github.com/psbrunosouza/fundamentos-angular/tree/main/angular-get-started">Primeiro Projeto</a>                  | Aprendendo os conceitos básicos, como módulos, componentes e diretivas |
-| <a href="https://github.com/psbrunosouza/fundamentos-angular/tree/main/angular-basics">Estrutura Básica</a>                       | Importação de módulos e componentes, estruturas e diretivas básicas    |
-| <a href="https://github.com/psbrunosouza/fundamentos-angular/tree/main/components-comunication">Comunicação entre componentes</a> | Transmissão de dados entre componentes                                 |
-| <a href="https://github.com/psbrunosouza/fundamentos-angular/tree/main/component-styling">Estilização de componentes</a>          | Diretivas voltadas para a estilização de elementos HTML                |
+| Módulo                                                                                                                               | Propósito                                                                        |
+|--------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
+| <a href="https://github.com/psbrunosouza/fundamentos-angular/tree/main/angular-get-started">Primeiro Projeto</a>                     | Aprendendo os conceitos básicos, como módulos, componentes e diretivas           |
+| <a href="https://github.com/psbrunosouza/fundamentos-angular/tree/main/angular-basics">Estrutura Básica</a>                          | Importação de módulos e componentes, estruturas e diretivas básicas              |
+| <a href="https://github.com/psbrunosouza/fundamentos-angular/tree/main/components-comunication">Comunicação entre componentes</a>    | Transmissão de dados entre componentes                                           |
+| <a href="https://github.com/psbrunosouza/fundamentos-angular/tree/main/component-styling">Estilização de componentes</a>             | Diretivas voltadas para a estilização de elementos HTML                          |
+| <a href="https://github.com/psbrunosouza/fundamentos-angular/tree/main/transform-data-with-pipe">Transformação de dados com Pipe</a> | Transformação de dados na interpolação, tais como: Currency, date, decimal, etc. |
+
+## 🔗 Links incríveis!
+
+| Link                                                                                                                            | Sobre                                              |
+|---------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------|
+| <a href="https://angular.io/docs">Angular Docs</a>                                                                              | Nada mais fundamental que a documentação oficial   |
+| <a href="https://www.youtube.com/watch?v=tPOMG0D57S0&list=PLGxZ4Rq3BOBoSRcKWEdQACbUCNWLczg2G">Curso Angular - Loiane Groner</a> | Curso top de angular |
+
 
 ## Versão
 
