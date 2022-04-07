@@ -1,0 +1,22 @@
+<!-- Recebendo dados através de @Input (pai -> filho) -->
+
+<h3>Recebendo dados através de @Input</h3>
+<p>
+  O nome do usuário é: {{userName}}
+</p>
+<p>Casado: {{married}}</p>
+
+<!-- Exemplo de evento disparado pelo usuário -->
+
+<h3>Exemplo de evento disparado por um usuário (click):</h3>
+<button (click)="count = count + 1">Contar</button>
+<p>Contador: {{count}}</p>
+
+<!-- Enviar informação ao componente pai @Output -->
+
+<h3>Enviar dados ao componente pai @Output: </h3>
+<p>
+  O nome do usuário é: {{userName}}
+</p>
+<p>Casado: {{married}}</p>
+<button (click)="sendData()">Enviar</button>

@@ -103,6 +103,8 @@ renderizar o conteúdo conforme o seu resultado.
 
 ## 3. Diretiva de Laços
 
+### ngFor
+
 Loops / laços, são essenciais em qualquer linguagem e não diferiria com o angular,
 podemos realizar loops através dos componentes, para trabalhar principalmente com listas
 de informações:
