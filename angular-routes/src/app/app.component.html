@@ -1,0 +1,17 @@
+<button [routerLink]="['/first-page']">First</button>
+<br/>
+<button [routerLink]="['/second-page']" [queryParams]="{prop: 1}">Second</button>
+<br/>
+<button [routerLink]="['/component-example', 2]">Component-example</button>
+<br/>
+<button (click)="goTo()">Second (using navigate)</button>
+<br/>
+<button (click)="goToWithParam()">Component-example (using navigate)</button>
+<br/>
+<button (click)="goToWithQueryParam()">Component-example (using navigate)</button>
+<br/>
+<button (click)="goToWithRelatedPath()">first-page-component-example (using navigate)</button>
+<br/>
+<button (click)="navigateByUrl()">navegação via url</button>
+<!-- Responsável por renderizar os componentes de outras rotas -->
+<router-outlet></router-outlet>
