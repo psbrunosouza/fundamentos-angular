@@ -13,6 +13,7 @@ novos programadores possam ter fácil adaptação e comprensão dos conceitos do
 | <a href="https://github.com/psbrunosouza/fundamentos-angular/tree/main/component-styling">Estilização de componentes</a>             | Diretivas voltadas para a estilização de elementos HTML                          |
 | <a href="https://github.com/psbrunosouza/fundamentos-angular/tree/main/transform-data-with-pipe">Transformação de dados com Pipe</a> | Transformação de dados na interpolação, tais como: Currency, date, decimal, etc. |
 | <a href="https://github.com/psbrunosouza/fundamentos-angular/tree/main/angular-routes">Estrutura de Rotas</a>                        | Estrutura de rotas, routerLink, navigate, etc.                                   |
+| <a href="https://github.com/psbrunosouza/learn-rxjs">RXJS</a>                                                                                                                      | Fundamentos e aplicações práticas da programação reativa                         |
 
 ## 🔗 Links incríveis!
 
