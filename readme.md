@@ -21,8 +21,9 @@ novos programadores possam ter fácil adaptação e comprensão dos conceitos do
 |---------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------|
 | <a href="https://angular.io/docs">Angular Docs</a>                                                                              | Nada mais fundamental que a documentação oficial   |
 | <a href="https://www.youtube.com/watch?v=tPOMG0D57S0&list=PLGxZ4Rq3BOBoSRcKWEdQACbUCNWLczg2G">Curso Angular - Loiane Groner</a> | Curso top de angular |
+| <a href="https://www.cod3r.com.br/courses/angular-9-essencial">Curso Angular - cod3r cursos</a>                                 | Curso angular indicação do nosso amigo <a href="https://www.tabnews.com.br/raloliver">raloliver</a></a> no tabnews!                     |
 
 
 ## Versão
 
-0.0.1
+0.0.2
